@@ -1,0 +1,27 @@
+.related-video-border {
+    display: flex;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /* Your CSS rules specific to phones go here */
+    /* For example, you can adjust font size, layout, or other styles for phones */
+
+
+    .related-video-border {
+        display: block;
+        height: 38vh;
+    }
+
+    .related {
+        width: 95vw !important;
+
+    }
+
+    .thumbnails {
+        width: 18rem !important;
+    }
+
+}

@@ -1,0 +1,42 @@
+.video_card {
+    /* position: absolute; */
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    /* height: 50%; */
+    /* width: 100%; */
+    /* height: 70%; */
+    position: relative;
+    left: 12%;
+
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.box {
+    height: 100px;
+    width: 100vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* Your CSS rules specific to phones go here */
+    /* For example, you can adjust font size, layout, or other styles for phones */
+    .every-video {
+        width: 70vw;
+    }
+
+    .video-text {
+        width: 16rem !important;
+    }
+
+    .img {
+        width: 17rem !important;
+    }
+
+    .video_card {
+        width: 100vw !important;
+    }
+}

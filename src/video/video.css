@@ -1,0 +1,112 @@
+.custom-pos {
+    position: absolute;
+    left: 10%;
+}
+
+.chanName {
+    width: 17%;
+    border: 2px solid;
+}
+
+.sub {
+    color: rgb(170, 170, 170);
+    top: 0.5rem;
+}
+
+.likes {
+    position: absolute;
+    right: 15%;
+    border: 2px solid #43414e;
+    border-radius: 20px;
+    width: 10rem;
+    height: 2.5rem;
+}
+
+.likesborder {
+    position: absolute;
+    top: 12%;
+    left: 8%;
+}
+
+.search-list {
+    width: 35vw;
+    align-self: flex-end;
+    /* position: absolute; */
+    /* right: 5%; */
+}
+
+.related-video-border {
+    height: 12vh;
+}
+
+
+@media (min-width: 1281px) and (min-height: 721px) {
+
+    /* Your CSS rules specific to 720p or larger screens go here */
+    /* For example, you can set the font size to be larger for 720p resolution */
+    /* .custom-pos {
+        left: 7%;
+    }
+
+    .related-video-border {
+        height: 21vh;
+    } */
+}
+
+/* CSS for screens smaller than 720p resolution (1280x720) */
+@media (max-width: 1280px) or (max-height: 720px) {
+
+    /* CSS rules for smaller screens go here */
+    .custom-pos {
+        left: 7%;
+    }
+
+    .related-video-border {
+        height: 21vh;
+    }
+}
+
+
+@media (min-width: 1921px) and (min-height: 1081px) {
+
+    /* CSS rules for 1080i or larger screens go here */
+    /* Uncomment the following lines if you want to set height for larger screens */
+    /* .related-video-border {
+        height: 14vh;
+    } */
+    .custom-pos {
+        left: 7%;
+    }
+
+    /* .related-video-border {
+        height: 21vh;
+    } */
+}
+
+/* CSS for phones */
+@media only screen and (max-width: 768px) {
+
+    /* Your CSS rules specific to phones go here */
+    /* For example, you can adjust font size, layout, or other styles for phones */
+
+
+    .custom-pos {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 90vw !important;
+    }
+
+    .likes {
+        right: -40px;
+    }
+
+    .avatar {
+        width: 100vw;
+    }
+
+    .related {
+        align-self: flex-start !important;
+    }
+
+}

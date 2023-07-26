@@ -1,0 +1,22 @@
+/* Media query for smaller screens */
+@media screen and (max-width: 1500px) {
+    .side {
+        width: 40vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Your CSS rules specific to phones go here */
+    /* For example, you can adjust font size, layout, or other styles for phones */
+    .sidebar {
+        display: none;
+    }
+
+    .video_card {
+        width: 100vw;
+        left: 0;
+    }
+
+
+}

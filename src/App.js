@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+// import Test from "./componnent/api";
+import React, { useState, useEffect } from "react";
+import Navbar from "./componnent/navbar/navabr";
+import Sidebar from "./componnent/navbar/sidebar";
+import Feed from "./componnent/feed/feed";
+import Api from './componnent/api'
+import Render from "./componnent/renderhome/render";
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import SearchResults from "./search/search";
+import { dataContext } from './componnent/navbar/sidebar'
+import Video from "./video/video";
 
 function App() {
+
+
+  document.body.style.backgroundColor = 'black';
+  const [rerender, setRerender] = useState(0);
+  useEffect(() => {
+    setRerender((prev) => prev + 1); // Update the state to trigger a re-render
+
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" exact element={<Sidebar counterforrender={1} />} />
+          <Route path="/search" exact element={<SearchResults />} />
+          <Route path="/video/:id" exact element={<Video />} />
+        </Routes>
+
+      </BrowserRouter>
+
+
     </div>
   );
 }
 
 export default App;
+

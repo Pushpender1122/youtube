@@ -10,7 +10,7 @@ export default function Feed(props) {
         } else if (views >= 1000) {
             return (views / 1000).toFixed(1) + 'K';
         }
-        { console.log("io am only who solve you problwem") }
+        // { console.log("io am only who solve you problwem") }
         return views;
     };
     return (

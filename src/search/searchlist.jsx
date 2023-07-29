@@ -27,7 +27,7 @@ const SerachlistVideo = (props) => {
 
   return (
     // remove p-5 in mobile
-    <div className='d-flex flex-wrap flex-column text-cente overflow-auto p-5 video_card ' style={{width:'87vw'}}>
+    <div className='d-flex flex-wrap flex-column  overflow-auto p-5 video_card '>
 
       {youtube_data.map((item, index) => {
         if (item.type === 'video' && item.video) {

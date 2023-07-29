@@ -93,3 +93,10 @@ input::placeholder {
     }
 
 }
+
+@media screen and (min-width: 1263px) {
+    .search-bar {
+        width: 44% !important;
+        left: -4% !important;
+    }
+}

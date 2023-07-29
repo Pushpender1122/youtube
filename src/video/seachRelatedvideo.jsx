@@ -15,7 +15,7 @@ function SeachRelatedvideo(props) {
   return (
     
       <div className=" d-flex flex-column m-2 overflow-auto align-items-center related"style={{width:'37rem'}}> 
-            <div className=" related-video-border" >
+            <div className=" related-video-border">
                 <Link to={`/video/${props.video.videoId}`}>
                 <img src={props.video.thumbnails[1].url} className="card-img-top img mr-5 thumbnails" alt="..." style={{ width: '14rem' }} />
                 </Link>

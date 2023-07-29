@@ -25,3 +25,9 @@
     }
 
 }
+
+@media screen and (min-width: 1263px) {
+    .related-video-border {
+        height: 23vh;
+    }
+}

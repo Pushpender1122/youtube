@@ -35,7 +35,7 @@ const SearchResults = () => {
   const fetchdata = async (query) => {
     const data = await Api(`https://youtube138.p.rapidapi.com/search/?q=${query}&hl=en&gl=in`)
    
-        setYoutube_data(data.contents);
+        setYoutube_data(data?.contents);
         setlaoder(false);
         setRerender((prev) => prev + 1); // Update the state to trigger a re-render
   };

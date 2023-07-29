@@ -1,6 +1,7 @@
 import React from "react";
 import '../componnent/feed/feed.css';
 import { Link } from 'react-router-dom'
+import './searchresult.css'
 
 export default function SearchShow(props) {
     const { title, verify, channel_name, author_image, image, views, publishtime,description,video_id } = props;
@@ -14,13 +15,13 @@ export default function SearchShow(props) {
     };
     return (
         
-        <div className=" d-flex flex-column m-2 overflow-auto align-items-center mb-3" style={{ width: "100rem"}}>
+        <div className=" d-flex flex-column m-2 overflow-auto  mb-3 All-result">
             <div className="d-flex ">
                 <Link to={`/video/${video_id}`}>
             <img src={image} className="card-img-top img mr-5" alt="..." style={{ width: '24rem' }} />
                 </Link>
             <div className=" bg-dark text-white  bg-black" style={{ width: '19rem', height: '12rem' }}>
-                <h5 style={{width:'46rem'}}>{title}</h5>
+                <h5 className="title">{title}</h5>
                 <div className="" style={{marginBottom:'17px'}}>
                     <span className="m-2" style={{ color: '#AAAAAA' }}>{formatViews(views)} views</span>
                     <span style={{ color: '#AAAAAA' }}>{publishtime}</span>
@@ -32,7 +33,7 @@ export default function SearchShow(props) {
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
                     </svg>
                 )}
-                <div style={{ width: '46rem' ,color:'#AAAAAA',marginTop:'1rem'}}> 
+                <div className="description"> 
                     {description}
                 </div>
             </div>

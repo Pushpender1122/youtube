@@ -1,7 +1,7 @@
 .video_card {
     /* position: absolute; */
     /* border: 2px solid red; */
-    /* width: 100%; */
+    width: 87vw;
     /* height: 50%; */
     /* width: 100%; */
     /* height: 70%; */
@@ -38,5 +38,11 @@
 
     .video_card {
         width: 100vw !important;
+    }
+}
+
+@media screen and (min-width: 1263px) {
+    .video_card {
+        width: 79vw !important;
     }
 }

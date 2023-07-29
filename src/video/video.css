@@ -1,6 +1,8 @@
 .custom-pos {
     position: absolute;
     left: 10%;
+    width: 41vw;
+
 }
 
 .chanName {
@@ -109,4 +111,10 @@
         align-self: flex-start !important;
     }
 
+}
+
+@media screen and (min-width: 1263px) {
+    /* .custom-pos {
+        height: 27vh;
+    } */
 }

@@ -1,0 +1,15 @@
+.video_card {
+    padding: 3rem;
+}
+
+@media screen and (min-width: 1263px) {
+    #remove {
+        width: 79vw !important;
+    }
+
+    .video_card {
+        padding: 1rem;
+        position: relative;
+        left: 19%;
+    }
+}

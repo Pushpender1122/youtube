@@ -30,12 +30,12 @@ function Video() {
     const urlRelated = `https://youtube138.p.rapidapi.com/video/related-contents/?id=${id}&hl=en&gl=in`;
     const data= await Api(urlRelated);
     setvideodataRelated(data);
-    console.log(data.contents);
+    console.log(data?.contents);
 
   }
   return (
     <>
-    <div className='text-white mt-5 custom-pos'style={{width:'41vw',height:'100vh'}}>
+    <div className='text-white mt-5 custom-pos'style={{height:'100vh'}}>
       <div >
         <ReactPlayer  url= {`https://www.youtube.com/watch?v=${id}`}
         controls

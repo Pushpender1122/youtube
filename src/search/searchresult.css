@@ -1,0 +1,30 @@
+.All-result {
+    align-items: center;
+    width: 100rem;
+}
+
+.title {
+    width: 46rem;
+}
+
+.description {
+    width: 46rem;
+    color: #AAAAAA;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1263px) {
+    .All-result {
+        align-items: normal;
+        width: 72vw !important;
+        height: 42vh;
+    }
+
+    .title {
+        width: 30rem;
+    }
+
+    .description {
+        width: 30rem;
+    }
+}

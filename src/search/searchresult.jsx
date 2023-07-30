@@ -16,7 +16,7 @@ export default function SearchShow(props) {
     return (
         
         <div className=" d-flex flex-column m-2 overflow-auto  mb-3 All-result">
-            <div className="d-flex ">
+            <div className="img-video-box">
                 <Link to={`/video/${video_id}`}>
             <img src={image} className="card-img-top img mr-5" alt="..." style={{ width: '24rem' }} />
                 </Link>

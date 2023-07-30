@@ -29,21 +29,21 @@ const SerachlistVideo = (props) => {
     // remove p-5 in mobile
     <div className='d-flex flex-wrap flex-column  overflow-auto p-5 video_card '>
 
-      {youtube_data.map((item, index) => {
+      {youtube_data?.map((item, index) => {
         if (item.type === 'video' && item.video) {
           const videoData = item.video;
           return (
             <SearchShow   
             key={index}
-            title={videoData.title}
-            verify={videoData.author.badges}
-            channel_name={videoData.author.title}
-            author_image={videoData.author.avatar[0].url}
-            image={videoData.thumbnails[0].url}
-            views={videoData.stats.views}
-            publishtime={videoData.publishedTimeText }
-            description={videoData.descriptionSnippet}
-            video_id={videoData.videoId}
+            title={videoData?.title}
+            verify={videoData?.author?.badges}
+            channel_name={videoData?.author?.title}
+            author_image={videoData?.author?.avatar[0]?.url}
+            image={videoData?.thumbnails[0]?.url}
+            views={videoData?.stats?.views}
+            publishtime={videoData?.publishedTimeText }
+            description={videoData?.descriptionSnippet}
+            video_id={videoData?.videoId}
             />
             );
           }

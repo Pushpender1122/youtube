@@ -4,7 +4,7 @@ const Api = async (url) => {
         method: 'GET',
         headers: {
 
-            'X-RapidAPI-Key': 'Your API KEY',
+            'X-RapidAPI-Key': 'YOUR_API_KEY',
             'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
         }
     };

@@ -13,6 +13,10 @@
     margin-top: 1rem;
 }
 
+.img-video-box {
+    display: flex;
+}
+
 @media screen and (min-width: 1263px) {
     .All-result {
         align-items: normal;
@@ -27,4 +31,27 @@
     .description {
         width: 30rem;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .All-result {
+        align-items: normal;
+        width: 75vw !important;
+        height: 45vh;
+    }
+
+    .title {
+        width: 50vw !important;
+    }
+
+
+
+    .img-video-box {
+        display: block;
+    }
+
+    .description {
+        display: none;
+    }
+
 }

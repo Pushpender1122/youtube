@@ -21,7 +21,7 @@ const Render = (props) => {
     <>
     {/* // remove p-5 in mobile */}
     <div className='d-flex flex-wrap overflow-auto  video_card ' id='remove' style={{width:'87vw'}}>
-      {youtube_data.map((item, index) => {
+      {youtube_data?.map((item, index) => {
         if (item.type === 'video' && item.video) {
           const videoData = item.video;
           return (
